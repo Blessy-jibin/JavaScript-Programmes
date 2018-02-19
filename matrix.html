@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Matrix</title>
+  
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+  
+
+</head>
+<body>
+	<div id="output">
+	</div>
+</body>
+
+
+<script>
+//Simple Algorithm	
+ /*var matrix=[];
+ var row=prompt("Type here number of rows");
+ var col=prompt("Type here number of columns");
+ console.log(row,col,typeof row,typeof col)
+ 
+ for(i=0;i<row;i++){
+ 	matrix[i]=[];
+ 	for(j=0;j<col;j++){
+      matrix[i][j]=;
+ 	}
+ }
+console.log(matrix);
+  */ 
+
+  
+  //Uisng Table
+var table_output="<table>";
+
+for(i=1;i<=row;i++){
+ 	table_output=table_output+ "<tr>"
+ 	for(j=1;j<=col;j++){
+      table_output=table_output+"<td>"+i+j+"</td>";
+ 	}
+ 	table_output=table_output+"</tr>"
+ } 
+
+ table_output=table_output+"</table>"
+document.write(table_output);
+</script>
+</html>

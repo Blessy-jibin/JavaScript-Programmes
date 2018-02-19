@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reverse</title>
+  
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+  
+
+</head>
+<body>
+	<div id="output">
+	</div>
+</body>
+
+
+<script>
+
+var n=prompt("Enter a number");
+var num=n.split("");
+len=num.length;
+
+for(i=0;i<(len-1)/2;i++){
+	var a=num[i];
+	//console.log(num[len-1-i]);
+    num[i]=num[len-1-i];
+    
+    num[len-1-i]=a;
+
+}
+num=num.join("")
+document.write(num);
+</script>
+</html>
