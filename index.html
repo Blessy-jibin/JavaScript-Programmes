@@ -1,0 +1,51 @@
+
+	<!DOCTYPE html>
+	<html lang="en-US">
+		<title> To do list Application+ using AngularJs </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>-->
+		<script src="controller.js"></script>
+		<script src="ui-bootstrap-tpls-2.5.0.min.js"></script>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+
+  <body ng-app="myApp" ng-controller="myCtrl">
+  	<div class="container">
+  		<h1>To do APP</h1>
+  		
+
+ <div ng-if="list.length==0">
+ 	<h1>Add to to to the list</h1>
+ </div>
+
+
+
+ <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add to the list</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Add item</h4>
+      </div>
+      <div class="modal-body" style="padding:45px;padding-bottom:60px">
+        <label class="col-sm-2">Item</label><input type="text" class="col-sm-10">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="sve()" style="background:blue;color: white;">Save to list</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+	

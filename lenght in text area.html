@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reverse</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+  <script>
+$(document).ready(function(){
+
+ var i=0;
+
+  $('#textarea').keyup(function(){
+  	     i=i+1;
+  	     if(i<=15){
+  	     var ren_len=15-i;
+  	     console.log(ren_len)
+  	     $('span').text(ren_len);
+              }
+       });
+
+});
+
+
+</script>
+  <style type="text/css">
+  	
+  #textarea{
+  	display: block;
+  }
+  </style>
+
+</head>
+<body>
+	
+	<textarea id="textarea" maxlength="15"></textarea>
+	<span>15</span> letters remaining.
+</body>
+
+
+
+</html>
